@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.medicine.mico">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/miko"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/miko_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mico">
+        <activity
+            android:name=".Measure_your_heartrate_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Personal_btn_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Head_and_shoulder_btn_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Mens_Health_btn_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Womens_health_btn_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Wellness_btn_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Sexual_health_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".At_Home_Lab_Tests_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Infoicon_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".AI_Dermatology_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Covid_Test_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Essential_Test_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Tests"
+            android:exported="true" />
+        <activity
+            android:name=".Beauty_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Meds_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Meds"
+            android:exported="true" />
+        <activity
+            android:name=".Home_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Sign_up_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Sign_in_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

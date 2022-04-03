@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFE9F1"
+    tools:context=".Covid_Test_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/account_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/n"
+                android:text=""
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/setting_btn"
+                android:layout_width="50dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/o"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/meds_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/manu_btn"
+                android:text="Meds"
+                android:textAllCaps="false"
+                android:textColor="@color/Royal_blue"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/account_btn" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/manu_btn"
+                android:text="Tests"
+                android:textAllCaps="false"
+                android:textColor="@color/Royal_blue"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/button3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button3"
+                app:layout_constraintTop_toTopOf="@+id/button3" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/manu_btn"
+                android:text="Beauty"
+                android:textAllCaps="false"
+                android:textColor="@color/Royal_blue"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/button4"
+                app:layout_constraintEnd_toStartOf="@+id/button2"
+                app:layout_constraintStart_toEndOf="@+id/button4"
+                app:layout_constraintTop_toTopOf="@+id/button4" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/manu_btn"
+                android:text="Chat"
+                android:textAllCaps="false"
+                android:textColor="@color/Royal_blue"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/meds_btn"
+                app:layout_constraintEnd_toStartOf="@+id/button3"
+                app:layout_constraintStart_toEndOf="@+id/meds_btn"
+                app:layout_constraintTop_toTopOf="@+id/meds_btn" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="98dp" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="match_parent"
+                android:layout_height="760dp"
+                android:layout_marginTop="112dp"
+                android:background="@drawable/beauty_view_clr"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="-47dp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:text="Suggestions"
+                android:textColor="@color/Royal_blue"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/progressBar1" />
+
+            <View
+                android:id="@+id/view9"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintBottom_toBottomOf="@+id/view11"
+                app:layout_constraintEnd_toStartOf="@+id/view11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view11" />
+
+            <View
+                android:id="@+id/view11"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <View
+                android:id="@+id/view10"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintBottom_toBottomOf="@+id/view11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view11"
+                app:layout_constraintTop_toTopOf="@+id/view11" />
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="88dp"
+                android:layout_height="89dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/an"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view9"
+                app:layout_constraintHorizontal_bias="0.454"
+                app:layout_constraintStart_toStartOf="@+id/view9"
+                app:layout_constraintTop_toTopOf="@+id/view9" />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="93dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/ao"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view11"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintStart_toStartOf="@+id/view11"
+                app:layout_constraintTop_toTopOf="@+id/view11" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="85dp"
+                android:layout_height="87dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/am"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view10"
+                app:layout_constraintHorizontal_bias="0.44"
+                app:layout_constraintStart_toStartOf="@+id/view10"
+                app:layout_constraintTop_toTopOf="@+id/view10" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Ibuprofen"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view9"
+                app:layout_constraintEnd_toEndOf="@+id/view9"
+                app:layout_constraintHorizontal_bias="0.538"
+                app:layout_constraintStart_toStartOf="@+id/view9"
+                app:layout_constraintTop_toTopOf="@+id/view9"
+                app:layout_constraintVertical_bias="0.973" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Measure Your Heart Rate"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view11"
+                app:layout_constraintEnd_toEndOf="@+id/view11"
+                app:layout_constraintHorizontal_bias="0.484"
+                app:layout_constraintStart_toStartOf="@+id/view11"
+                app:layout_constraintTop_toTopOf="@+id/view11"
+                app:layout_constraintVertical_bias="0.979" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Vitamin B12"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view10"
+                app:layout_constraintEnd_toEndOf="@+id/view10"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="@+id/view10"
+                app:layout_constraintTop_toTopOf="@+id/view10"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="371dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view14" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="10dp"
+                android:text="Tap below the reason for your interest in a Covid-19 PCR Test"
+                android:textAlignment="center"
+                android:textColor="@color/draker_gray"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view8" />
+
+            <View
+                android:id="@+id/view12"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintEnd_toStartOf="@+id/view13"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+            <View
+                android:id="@+id/view13"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="70dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintBottom_toBottomOf="@+id/view12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view12"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <View
+                android:id="@+id/view14"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintEnd_toEndOf="@+id/view12"
+                app:layout_constraintStart_toStartOf="@+id/view12"
+                app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="88dp"
+                android:layout_height="89dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ap"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view12"
+                app:layout_constraintStart_toStartOf="@+id/view12"
+                app:layout_constraintTop_toTopOf="@+id/view12" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Individual Use"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view12"
+                app:layout_constraintEnd_toEndOf="@+id/view12"
+                app:layout_constraintStart_toStartOf="@+id/view12"
+                app:layout_constraintTop_toBottomOf="@+id/button19" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="88dp"
+                android:layout_height="89dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ar"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view13"
+                app:layout_constraintStart_toStartOf="@+id/view13"
+                app:layout_constraintTop_toTopOf="@+id/view13" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Travel Purposes"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view13"
+                app:layout_constraintEnd_toEndOf="@+id/view13"
+                app:layout_constraintStart_toStartOf="@+id/view13"
+                app:layout_constraintTop_toBottomOf="@+id/button20" />
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="88dp"
+                android:layout_height="89dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/aq"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view14"
+                app:layout_constraintStart_toStartOf="@+id/view14"
+                app:layout_constraintTop_toTopOf="@+id/view14" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Enterprise (Bulk)"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view14"
+                app:layout_constraintEnd_toEndOf="@+id/view14"
+                app:layout_constraintStart_toStartOf="@+id/view14"
+                app:layout_constraintTop_toBottomOf="@+id/button21" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

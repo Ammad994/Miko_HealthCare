@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFE9F1"
+    tools:context=".Beauty_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/account_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/n"
+                android:text=""
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/setting_btn"
+                android:layout_width="50dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/o"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/meds_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/manu_btn"
+                android:text="Meds"
+                android:textAllCaps="false"
+                android:textColor="@color/Royal_blue"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/account_btn" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/manu_btn"
+                android:text="Tests"
+                android:textAllCaps="false"
+                android:textColor="@color/Royal_blue"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/button3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button3"
+                app:layout_constraintTop_toTopOf="@+id/button3" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/manu_btn"
+                android:text="Beauty"
+                android:textAllCaps="false"
+                android:textColor="@color/Royal_blue"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/button4"
+                app:layout_constraintEnd_toStartOf="@+id/button2"
+                app:layout_constraintStart_toEndOf="@+id/button4"
+                app:layout_constraintTop_toTopOf="@+id/button4" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/manu_btn"
+                android:text="Chat"
+                android:textAllCaps="false"
+                android:textColor="@color/Royal_blue"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/meds_btn"
+                app:layout_constraintEnd_toStartOf="@+id/button3"
+                app:layout_constraintStart_toEndOf="@+id/meds_btn"
+                app:layout_constraintTop_toTopOf="@+id/meds_btn" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="98dp" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="match_parent"
+                android:layout_height="1200dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/beauty_view_clr"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:padding="10dp"
+                android:text="Recommended for you"
+                android:textColor="@color/Royal_blue"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view8" />
+
+            <View
+                android:id="@+id/view9"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintBottom_toBottomOf="@+id/view11"
+                app:layout_constraintEnd_toStartOf="@+id/view11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view11" />
+
+            <View
+                android:id="@+id/view11"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="76dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view8" />
+
+            <View
+                android:id="@+id/view10"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintBottom_toBottomOf="@+id/view11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view11"
+                app:layout_constraintTop_toTopOf="@+id/view11" />
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="88dp"
+                android:layout_height="89dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/r"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view9"
+                app:layout_constraintHorizontal_bias="0.454"
+                app:layout_constraintStart_toStartOf="@+id/view9"
+                app:layout_constraintTop_toTopOf="@+id/view9" />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="108dp"
+                android:layout_height="88dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/s"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view11"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/view11"
+                app:layout_constraintTop_toTopOf="@+id/view11" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="85dp"
+                android:layout_height="87dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/t"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view10"
+                app:layout_constraintHorizontal_bias="0.44"
+                app:layout_constraintStart_toStartOf="@+id/view10"
+                app:layout_constraintTop_toTopOf="@+id/view10" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="AI Dermatology\nFaceMap"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view9"
+                app:layout_constraintEnd_toEndOf="@+id/view9"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/view9"
+                app:layout_constraintTop_toTopOf="@+id/view9"
+                app:layout_constraintVertical_bias="0.979" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Wellbeing\nProducts"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view11"
+                app:layout_constraintEnd_toEndOf="@+id/view11"
+                app:layout_constraintHorizontal_bias="0.484"
+                app:layout_constraintStart_toStartOf="@+id/view11"
+                app:layout_constraintTop_toTopOf="@+id/view11"
+                app:layout_constraintVertical_bias="0.979" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Haircare\nFor Men"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view10"
+                app:layout_constraintEnd_toEndOf="@+id/view10"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="@+id/view10"
+                app:layout_constraintTop_toTopOf="@+id/view10"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view11" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:padding="10dp"
+                android:text="Orders"
+                android:textColor="@color/Royal_blue"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:padding="10dp"
+                android:text="Status"
+                android:textColor="@color/Royal_blue"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView18"
+                app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:padding="10dp"
+                android:text="Repeat"
+                android:textColor="@color/Royal_blue"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView19"
+                app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/beauty_btn"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Gilette Razor Blades, Head &amp;\nShoulders"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/beauty_btn"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Gilette Razor Blades, Head &amp;\nShoulders"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button19" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@drawable/medical"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.128"
+                app:layout_constraintStart_toStartOf="@+id/textView19"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/check_box"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView21"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="29dp"
+                android:layout_height="25dp"
+                android:checked="false"
+                android:text=""
+                android:theme="@style/colored_checkbox"
+                app:layout_constraintBottom_toBottomOf="@+id/textView21"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.612"
+                app:layout_constraintStart_toEndOf="@+id/textView21"
+                app:layout_constraintTop_toTopOf="@+id/textView21" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="31dp"
+                android:layout_height="27dp"
+                android:checked="false"
+                android:text=""
+                android:theme="@style/colored_checkbox"
+                app:layout_constraintBottom_toBottomOf="@+id/textView22"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.633"
+                app:layout_constraintStart_toEndOf="@+id/textView22"
+                app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.525"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button20" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Browse by Category"
+                android:textColor="@color/Royal_blue"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/progressBar1" />
+
+
+            <View
+                android:id="@+id/view12"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Wellbeing"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view12"
+                app:layout_constraintEnd_toEndOf="@+id/view12"
+                app:layout_constraintStart_toStartOf="@+id/view12" />
+
+            <View
+                android:id="@+id/view13"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintBottom_toBottomOf="@+id/view12"
+                app:layout_constraintStart_toEndOf="@+id/view12"
+                app:layout_constraintTop_toTopOf="@+id/view12"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Skincare"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view13"
+                app:layout_constraintEnd_toEndOf="@+id/view13"
+                app:layout_constraintStart_toStartOf="@+id/view13" />
+
+            <View
+                android:id="@+id/view14"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintBottom_toBottomOf="@+id/view13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view13"
+                app:layout_constraintTop_toTopOf="@+id/view13" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Make-Up"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view14"
+                app:layout_constraintEnd_toEndOf="@+id/view14"
+                app:layout_constraintStart_toStartOf="@+id/view14" />
+
+            <View
+                android:id="@+id/view15"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintBottom_toBottomOf="@+id/view16"
+                app:layout_constraintEnd_toEndOf="@+id/view18"
+                app:layout_constraintStart_toStartOf="@+id/view18"
+                app:layout_constraintTop_toTopOf="@+id/view16" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Haircare"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view15"
+                app:layout_constraintEnd_toEndOf="@+id/view15"
+                app:layout_constraintStart_toStartOf="@+id/view15" />
+
+            <View
+                android:id="@+id/view16"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintBottom_toBottomOf="@+id/view17"
+                app:layout_constraintEnd_toEndOf="@+id/view19"
+                app:layout_constraintStart_toStartOf="@+id/view19"
+                app:layout_constraintTop_toTopOf="@+id/view17" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Body"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view16"
+                app:layout_constraintEnd_toEndOf="@+id/view16"
+                app:layout_constraintStart_toStartOf="@+id/view16" />
+
+
+            <View
+                android:id="@+id/view17"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintEnd_toEndOf="@+id/view20"
+                app:layout_constraintStart_toStartOf="@+id/view20"
+                app:layout_constraintTop_toBottomOf="@+id/view20" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Homeware"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view17"
+                app:layout_constraintEnd_toEndOf="@+id/view17"
+                app:layout_constraintStart_toStartOf="@+id/view17" />
+
+
+            <View
+                android:id="@+id/view18"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintBottom_toBottomOf="@+id/view19"
+                app:layout_constraintEnd_toEndOf="@+id/view21"
+                app:layout_constraintStart_toStartOf="@+id/view21"
+                app:layout_constraintTop_toTopOf="@+id/view19" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Fragrance"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view18"
+                app:layout_constraintEnd_toEndOf="@+id/view18"
+                app:layout_constraintStart_toStartOf="@+id/view18" />
+
+            <View
+                android:id="@+id/view19"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintBottom_toBottomOf="@+id/view20"
+                app:layout_constraintEnd_toEndOf="@+id/view22"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/view22"
+                app:layout_constraintTop_toTopOf="@+id/view20"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Men"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view19"
+                app:layout_constraintEnd_toEndOf="@+id/view19"
+                app:layout_constraintStart_toStartOf="@+id/view19" />
+
+            <View
+                android:id="@+id/view20"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintEnd_toEndOf="@+id/view23"
+                app:layout_constraintStart_toStartOf="@+id/view23"
+                app:layout_constraintTop_toBottomOf="@+id/view23" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Vegan"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view20"
+                app:layout_constraintEnd_toEndOf="@+id/view20"
+                app:layout_constraintStart_toStartOf="@+id/view20" />
+
+            <View
+                android:id="@+id/view21"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintBottom_toBottomOf="@+id/view22"
+                app:layout_constraintEnd_toEndOf="@+id/view14"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/view14"
+                app:layout_constraintTop_toTopOf="@+id/view22"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Toiletries"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view21"
+                app:layout_constraintEnd_toEndOf="@+id/view21"
+                app:layout_constraintStart_toStartOf="@+id/view21" />
+
+            <View
+                android:id="@+id/view22"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintBottom_toBottomOf="@+id/view23"
+                app:layout_constraintEnd_toEndOf="@+id/view13"
+                app:layout_constraintStart_toStartOf="@+id/view13"
+                app:layout_constraintTop_toTopOf="@+id/view23" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Tanning"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view22"
+                app:layout_constraintEnd_toEndOf="@+id/view22"
+                app:layout_constraintStart_toStartOf="@+id/view22" />
+
+
+            <View
+                android:id="@+id/view23"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/product_view_bg"
+                app:layout_constraintEnd_toEndOf="@+id/view12"
+                app:layout_constraintStart_toStartOf="@+id/view12"
+                app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Suncare"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view23"
+                app:layout_constraintEnd_toEndOf="@+id/view23"
+                app:layout_constraintStart_toStartOf="@+id/view23" />
+
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="78dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/u"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view12"
+                app:layout_constraintStart_toStartOf="@+id/view12"
+                app:layout_constraintTop_toTopOf="@+id/view12" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="78dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/v"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view13"
+                app:layout_constraintStart_toStartOf="@+id/view13"
+                app:layout_constraintTop_toTopOf="@+id/view13" />
+
+            <Button
+                android:id="@+id/button23"
+                android:layout_width="78dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/w"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view14"
+                app:layout_constraintStart_toStartOf="@+id/view14"
+                app:layout_constraintTop_toTopOf="@+id/view14" />
+
+            <Button
+                android:id="@+id/button24"
+                android:layout_width="78dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/x"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view23"
+                app:layout_constraintStart_toStartOf="@+id/view23"
+                app:layout_constraintTop_toTopOf="@+id/view23" />
+
+            <Button
+                android:id="@+id/button25"
+                android:layout_width="78dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/y"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view22"
+                app:layout_constraintStart_toStartOf="@+id/view22"
+                app:layout_constraintTop_toTopOf="@+id/view22" />
+
+            <Button
+                android:id="@+id/button26"
+                android:layout_width="78dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/z"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view21"
+                app:layout_constraintStart_toStartOf="@+id/view21"
+                app:layout_constraintTop_toTopOf="@+id/view21" />
+
+            <Button
+                android:id="@+id/button27"
+                android:layout_width="78dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/aa"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view20"
+                app:layout_constraintStart_toStartOf="@+id/view20"
+                app:layout_constraintTop_toTopOf="@+id/view20" />
+
+            <Button
+                android:id="@+id/button28"
+                android:layout_width="78dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ab"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view19"
+                app:layout_constraintStart_toStartOf="@+id/view19"
+                app:layout_constraintTop_toTopOf="@+id/view19" />
+
+            <Button
+                android:id="@+id/button29"
+                android:layout_width="78dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ac"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view18"
+                app:layout_constraintStart_toStartOf="@+id/view18"
+                app:layout_constraintTop_toTopOf="@+id/view18" />
+
+            <Button
+                android:id="@+id/button30"
+                android:layout_width="78dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ad"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view17"
+                app:layout_constraintStart_toStartOf="@+id/view17"
+                app:layout_constraintTop_toTopOf="@+id/view17" />
+
+            <Button
+                android:id="@+id/button31"
+                android:layout_width="78dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ae"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view16"
+                app:layout_constraintStart_toStartOf="@+id/view16"
+                app:layout_constraintTop_toTopOf="@+id/view16" />
+
+            <Button
+                android:id="@+id/button32"
+                android:layout_width="78dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/af"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/view15"
+                app:layout_constraintStart_toStartOf="@+id/view15"
+                app:layout_constraintTop_toTopOf="@+id/view15" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Mico - Copy/app/src/main/res/drawable/manu_btn.xml" value="0.2676923076923077" />
+        <entry key="..\:/Mico - Copy/app/src/main/res/layout/activity_home.xml" value="0.20878623188405798" />
+        <entry key="..\:/Mico - Copy/app/src/main/res/layout/activity_main.xml" value="0.2128623188405797" />
+        <entry key="..\:/Mico - Copy/app/src/main/res/layout/activity_sign_in.xml" value="0.20878623188405798" />
+        <entry key="..\:/Mico/app/src/main/res/drawable/email_password_bd.xml" value="0.22685185185185186" />
+        <entry key="..\:/Mico/app/src/main/res/drawable/login_btn.xml" value="0.22685185185185186" />
+        <entry key="..\:/Mico/app/src/main/res/drawable/radius_login.xml" value="0.22685185185185186" />
+        <entry key="..\:/Mico/app/src/main/res/drawable/sign_in_btn.xml" value="0.22685185185185186" />
+        <entry key="..\:/Mico/app/src/main/res/layout/activity_main.xml" value="0.14175724637681159" />
+        <entry key="..\:/Mico/app/src/main/res/layout/activity_sign_in.xml" value="0.2" />
+        <entry key="..\:/Mico/app/src/main/res/layout/activity_sign_up.xml" value="0.1621376811594203" />
+        <entry key="..\:/Miko/app/src/main/res/drawable/arrow_right.xml" value="0.1723127035830619" />
+        <entry key="..\:/Miko/app/src/main/res/drawable/autorefill_btn.xml" value="0.2657407407407407" />
+        <entry key="..\:/Miko/app/src/main/res/drawable/beauty_btn.xml" value="0.2657407407407407" />
+        <entry key="..\:/Miko/app/src/main/res/drawable/beauty_view_clr.xml" value="0.1723127035830619" />
+        <entry key="..\:/Miko/app/src/main/res/drawable/info_btn.xml" value="0.2657407407407407" />
+        <entry key="..\:/Miko/app/src/main/res/drawable/login_btn.xml" value="0.2657407407407407" />
+        <entry key="..\:/Miko/app/src/main/res/drawable/product_view_bg.xml" value="0.2657407407407407" />
+        <entry key="..\:/Miko/app/src/main/res/drawable/radius_login.xml" value="0.2657407407407407" />
+        <entry key="..\:/Miko/app/src/main/res/drawable/sign_in_btn.xml" value="0.2657407407407407" />
+        <entry key="..\:/Miko/app/src/main/res/drawable/skip_btn.xml" value="0.2657407407407407" />
+        <entry key="..\:/Miko/app/src/main/res/drawable/stroke_btn.xml" value="0.2657407407407407" />
+        <entry key="..\:/Miko/app/src/main/res/drawable/taken_btn.xml" value="0.2657407407407407" />
+        <entry key="..\:/Miko/app/src/main/res/layout/activity_ai_dermatology.xml" value="0.2" />
+        <entry key="..\:/Miko/app/src/main/res/layout/activity_at_home_lab_tests.xml" value="0.2" />
+        <entry key="..\:/Miko/app/src/main/res/layout/activity_beauty.xml" value="0.176" />
+        <entry key="..\:/Miko/app/src/main/res/layout/activity_covid_test.xml" value="0.176" />
+        <entry key="..\:/Miko/app/src/main/res/layout/activity_essential_test.xml" value="0.2" />
+        <entry key="..\:/Miko/app/src/main/res/layout/activity_head_and_shoulder_btn.xml" value="0.2" />
+        <entry key="..\:/Miko/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/Miko/app/src/main/res/layout/activity_infoicon.xml" value="0.2" />
+        <entry key="..\:/Miko/app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
+        <entry key="..\:/Miko/app/src/main/res/layout/activity_measure_your_heartrate.xml" value="0.1478825136612022" />
+        <entry key="..\:/Miko/app/src/main/res/layout/activity_meds.xml" value="0.2" />
+        <entry key="..\:/Miko/app/src/main/res/layout/activity_mens_health_btn.xml" value="0.176" />
+        <entry key="..\:/Miko/app/src/main/res/layout/activity_personal_btn.xml" value="0.264" />
+        <entry key="..\:/Miko/app/src/main/res/layout/activity_sexual_health.xml" value="0.2" />
+        <entry key="..\:/Miko/app/src/main/res/layout/activity_sign_in.xml" value="0.19610507246376813" />
+        <entry key="..\:/Miko/app/src/main/res/layout/activity_sign_up.xml" value="0.19610507246376813" />
+        <entry key="..\:/Miko/app/src/main/res/layout/activity_tests.xml" value="0.2" />
+        <entry key="..\:/Miko/app/src/main/res/layout/activity_wellness_btn.xml" value="0.2" />
+        <entry key="..\:/Miko/app/src/main/res/layout/activity_womens_health_btn.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
